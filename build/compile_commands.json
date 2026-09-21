@@ -1,0 +1,44 @@
+[
+{
+  "directory": "C:/Projects/Citrine RIS/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\caris.dir\\src\\economy.cpp.obj -c \"C:\\Projects\\Citrine RIS\\src\\economy.cpp\"",
+  "file": "C:/Projects/Citrine RIS/src/economy.cpp",
+  "output": "CMakeFiles/caris.dir/src/economy.cpp.obj"
+},
+{
+  "directory": "C:/Projects/Citrine RIS/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\caris.dir\\src\\gov.cpp.obj -c \"C:\\Projects\\Citrine RIS\\src\\gov.cpp\"",
+  "file": "C:/Projects/Citrine RIS/src/gov.cpp",
+  "output": "CMakeFiles/caris.dir/src/gov.cpp.obj"
+},
+{
+  "directory": "C:/Projects/Citrine RIS/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\caris.dir\\src\\helper.cpp.obj -c \"C:\\Projects\\Citrine RIS\\src\\helper.cpp\"",
+  "file": "C:/Projects/Citrine RIS/src/helper.cpp",
+  "output": "CMakeFiles/caris.dir/src/helper.cpp.obj"
+},
+{
+  "directory": "C:/Projects/Citrine RIS/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\caris.dir\\src\\industry.cpp.obj -c \"C:\\Projects\\Citrine RIS\\src\\industry.cpp\"",
+  "file": "C:/Projects/Citrine RIS/src/industry.cpp",
+  "output": "CMakeFiles/caris.dir/src/industry.cpp.obj"
+},
+{
+  "directory": "C:/Projects/Citrine RIS/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\caris.dir\\src\\init.cpp.obj -c \"C:\\Projects\\Citrine RIS\\src\\init.cpp\"",
+  "file": "C:/Projects/Citrine RIS/src/init.cpp",
+  "output": "CMakeFiles/caris.dir/src/init.cpp.obj"
+},
+{
+  "directory": "C:/Projects/Citrine RIS/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\caris.dir\\src\\main.cpp.obj -c \"C:\\Projects\\Citrine RIS\\src\\main.cpp\"",
+  "file": "C:/Projects/Citrine RIS/src/main.cpp",
+  "output": "CMakeFiles/caris.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Projects/Citrine RIS/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\caris.dir\\src\\sim.cpp.obj -c \"C:\\Projects\\Citrine RIS\\src\\sim.cpp\"",
+  "file": "C:/Projects/Citrine RIS/src/sim.cpp",
+  "output": "CMakeFiles/caris.dir/src/sim.cpp.obj"
+}
+]
