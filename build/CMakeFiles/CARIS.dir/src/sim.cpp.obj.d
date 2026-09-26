@@ -203,4 +203,5 @@ CMakeFiles/caris.dir/src/sim.cpp.obj: \
  C:\Projects\Citrine\ RIS\src\industry.h \
  C:/msys64/ucrt64/include/c++/16.1.0/deque \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_deque.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/deque.tcc
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/deque.tcc \
+ C:\Projects\Citrine\ RIS\src\invest.h

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "init.h"
 #include "economy.h"
 #include "helper.h"
@@ -11,7 +12,7 @@ void Economy::setEcon(double modifier) {
     laborParticipation = laborForce / population;
 
     productivity = 20000 + modifier * 180000;
-    potentialGDP = laborForce * productivity;
+    potentialGDP = productivity * std::pow(laborForce, 0.7);
 
     double consumptionRate = 0.55 + modifier * 0.2;
     consumption = potentialGDP * consumptionRate;
@@ -27,9 +28,20 @@ void Economy::setEcon(double modifier) {
 
 void Economy::finalize(double indOutput) {
     gdp = indOutput;
-    double outputGap = (gdp - potentialGDP) / potentialGDP;
-    inflation = 0.02 + outputGap * 0.5;
-    priceLevel *= (1 + inflation);
+    double demandGrowth = 0;
+    if (hasPrev) {
+        demandGrowth = (demandGDP - prevDemand) / prevDemand;
+        outputGrowth = (gdp - prevGdp) / prevGdp;
+        inflation = 0.02 + (demandGrowth - outputGrowth) * 0.5;
+        priceLevel *= (1 + inflation);
+    } else {
+        inflation = 0.02;
+        priceLevel *= (1 + inflation);
+        outputGrowth = 0.01;
+    }
+    prevDemand = demandGDP;
+    prevGdp = gdp;
+    hasPrev = true;
 }
 
 void Economy::update(double govSpending) {
@@ -44,7 +56,7 @@ void Economy::update(double govSpending) {
 
     laborForce = population * ((rand1 * rand1) - rand1 + 1) / 1.1;
     laborParticipation = laborForce / population;
-    potentialGDP = laborForce * productivity;
+    potentialGDP = productivity * std::pow(laborForce, 0.7);
     
     double consumptionRate = 0.55 + rand2 * 0.2 - (0.5 * inflation);
     consumption = potentialGDP * consumptionRate;
@@ -55,7 +67,7 @@ void Economy::update(double govSpending) {
 }
 
 void Economy::stats() {
-    std::cout << "\033[2J\033[H";
+    std::cout << "Economy\n";
     std::cout << "--------------------------------" << std::endl;
     std::cout << "Population: " << formatNumber(population) << "\n";
     std::cout << "Labor Participation: " << formatNumber((laborParticipation * 100)) << "%" << "\n";

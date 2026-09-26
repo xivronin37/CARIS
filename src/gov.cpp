@@ -28,14 +28,13 @@ void Government::update(Economy& economy) {;
         if (intervalAdjust > 1) intervalAdjust--;
     }
 
-    double outputGap = (economy.gdp - economy.potentialGDP) / economy.potentialGDP;
-    double spendingRate = 0.2 - outputGap * 0.5;
+    double spendingRate = 0.2 - economy.outputGrowth * 0.5;
     governmentSpending = economy.potentialGDP * spendingRate;
     economy.governmentSpending = governmentSpending;
 }
 
 void Government::govStats() {
-    std::cout << "\033[2J\033[H";
+    std::cout << "Government\n";
     std::cout << "--------------------------------" << std::endl;
     std::cout << "Tax Rate: " << formatNumber(taxRate*100) << "%\n";
     std::cout << "Government Spending: $" << formatNumber(governmentSpending) << "\n";

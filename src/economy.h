@@ -17,6 +17,10 @@ class Economy {
         double potentialGDP;
         double demandGDP;
         double gdp;
+        double prevDemand;
+        double prevGdp;
+        bool hasPrev;
+        double outputGrowth;
         double inflation;
         double priceLevel = 1.0;
         

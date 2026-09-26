@@ -72,6 +72,7 @@ CMakeFiles/caris.dir/codegen:
 .PHONY : CMakeFiles/caris.dir/codegen
 
 CMakeFiles/caris.dir/src/economy.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/src/economy.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
 CMakeFiles/caris.dir/src/economy.cpp.obj: C:/Projects/Citrine\ RIS/src/economy.cpp
 CMakeFiles/caris.dir/src/economy.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/caris.dir/src/economy.cpp.obj"
@@ -86,6 +87,7 @@ CMakeFiles/caris.dir/src/economy.cpp.s: cmake_force
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\economy.cpp" -o CMakeFiles\caris.dir\src\economy.cpp.s
 
 CMakeFiles/caris.dir/src/gov.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/src/gov.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
 CMakeFiles/caris.dir/src/gov.cpp.obj: C:/Projects/Citrine\ RIS/src/gov.cpp
 CMakeFiles/caris.dir/src/gov.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/caris.dir/src/gov.cpp.obj"
@@ -100,6 +102,7 @@ CMakeFiles/caris.dir/src/gov.cpp.s: cmake_force
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\gov.cpp" -o CMakeFiles\caris.dir\src\gov.cpp.s
 
 CMakeFiles/caris.dir/src/helper.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/src/helper.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
 CMakeFiles/caris.dir/src/helper.cpp.obj: C:/Projects/Citrine\ RIS/src/helper.cpp
 CMakeFiles/caris.dir/src/helper.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/caris.dir/src/helper.cpp.obj"
@@ -114,6 +117,7 @@ CMakeFiles/caris.dir/src/helper.cpp.s: cmake_force
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\helper.cpp" -o CMakeFiles\caris.dir\src\helper.cpp.s
 
 CMakeFiles/caris.dir/src/industry.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/src/industry.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
 CMakeFiles/caris.dir/src/industry.cpp.obj: C:/Projects/Citrine\ RIS/src/industry.cpp
 CMakeFiles/caris.dir/src/industry.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/caris.dir/src/industry.cpp.obj"
@@ -128,6 +132,7 @@ CMakeFiles/caris.dir/src/industry.cpp.s: cmake_force
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\industry.cpp" -o CMakeFiles\caris.dir\src\industry.cpp.s
 
 CMakeFiles/caris.dir/src/init.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/src/init.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
 CMakeFiles/caris.dir/src/init.cpp.obj: C:/Projects/Citrine\ RIS/src/init.cpp
 CMakeFiles/caris.dir/src/init.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/caris.dir/src/init.cpp.obj"
@@ -141,24 +146,41 @@ CMakeFiles/caris.dir/src/init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/src/init.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\init.cpp" -o CMakeFiles\caris.dir\src\init.cpp.s
 
-CMakeFiles/caris.dir/src/main.cpp.obj: CMakeFiles/caris.dir/flags.make
-CMakeFiles/caris.dir/src/main.cpp.obj: C:/Projects/Citrine\ RIS/src/main.cpp
-CMakeFiles/caris.dir/src/main.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/caris.dir/src/main.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/src/main.cpp.obj -MF CMakeFiles\caris.dir\src\main.cpp.obj.d -o CMakeFiles\caris.dir\src\main.cpp.obj -c "C:\Projects\Citrine RIS\src\main.cpp"
+CMakeFiles/caris.dir/src/invest.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/src/invest.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/src/invest.cpp.obj: C:/Projects/Citrine\ RIS/src/invest.cpp
+CMakeFiles/caris.dir/src/invest.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/caris.dir/src/invest.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/src/invest.cpp.obj -MF CMakeFiles\caris.dir\src\invest.cpp.obj.d -o CMakeFiles\caris.dir\src\invest.cpp.obj -c "C:\Projects\Citrine RIS\src\invest.cpp"
 
-CMakeFiles/caris.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/src/main.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\src\main.cpp" > CMakeFiles\caris.dir\src\main.cpp.i
+CMakeFiles/caris.dir/src/invest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/src/invest.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\src\invest.cpp" > CMakeFiles\caris.dir\src\invest.cpp.i
 
-CMakeFiles/caris.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/src/main.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\main.cpp" -o CMakeFiles\caris.dir\src\main.cpp.s
+CMakeFiles/caris.dir/src/invest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/src/invest.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\invest.cpp" -o CMakeFiles\caris.dir\src\invest.cpp.s
+
+CMakeFiles/caris.dir/src/mainGui.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/src/mainGui.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/src/mainGui.cpp.obj: C:/Projects/Citrine\ RIS/src/mainGui.cpp
+CMakeFiles/caris.dir/src/mainGui.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/caris.dir/src/mainGui.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/src/mainGui.cpp.obj -MF CMakeFiles\caris.dir\src\mainGui.cpp.obj.d -o CMakeFiles\caris.dir\src\mainGui.cpp.obj -c "C:\Projects\Citrine RIS\src\mainGui.cpp"
+
+CMakeFiles/caris.dir/src/mainGui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/src/mainGui.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\src\mainGui.cpp" > CMakeFiles\caris.dir\src\mainGui.cpp.i
+
+CMakeFiles/caris.dir/src/mainGui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/src/mainGui.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\mainGui.cpp" -o CMakeFiles\caris.dir\src\mainGui.cpp.s
 
 CMakeFiles/caris.dir/src/sim.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/src/sim.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
 CMakeFiles/caris.dir/src/sim.cpp.obj: C:/Projects/Citrine\ RIS/src/sim.cpp
 CMakeFiles/caris.dir/src/sim.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/caris.dir/src/sim.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/caris.dir/src/sim.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/src/sim.cpp.obj -MF CMakeFiles\caris.dir\src\sim.cpp.obj.d -o CMakeFiles\caris.dir\src\sim.cpp.obj -c "C:\Projects\Citrine RIS\src\sim.cpp"
 
 CMakeFiles/caris.dir/src/sim.cpp.i: cmake_force
@@ -169,6 +191,126 @@ CMakeFiles/caris.dir/src/sim.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/src/sim.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\src\sim.cpp" -o CMakeFiles\caris.dir\src\sim.cpp.s
 
+CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj: _deps/imgui-src/imgui.cpp
+CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj -MF CMakeFiles\caris.dir\_deps\imgui-src\imgui.cpp.obj.d -o CMakeFiles\caris.dir\_deps\imgui-src\imgui.cpp.obj -c "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui.cpp"
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui.cpp" > CMakeFiles\caris.dir\_deps\imgui-src\imgui.cpp.i
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui.cpp" -o CMakeFiles\caris.dir\_deps\imgui-src\imgui.cpp.s
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj: _deps/imgui-src/imgui_draw.cpp
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj -MF CMakeFiles\caris.dir\_deps\imgui-src\imgui_draw.cpp.obj.d -o CMakeFiles\caris.dir\_deps\imgui-src\imgui_draw.cpp.obj -c "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_draw.cpp"
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_draw.cpp" > CMakeFiles\caris.dir\_deps\imgui-src\imgui_draw.cpp.i
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_draw.cpp" -o CMakeFiles\caris.dir\_deps\imgui-src\imgui_draw.cpp.s
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj: _deps/imgui-src/imgui_widgets.cpp
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj -MF CMakeFiles\caris.dir\_deps\imgui-src\imgui_widgets.cpp.obj.d -o CMakeFiles\caris.dir\_deps\imgui-src\imgui_widgets.cpp.obj -c "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_widgets.cpp"
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_widgets.cpp" > CMakeFiles\caris.dir\_deps\imgui-src\imgui_widgets.cpp.i
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_widgets.cpp" -o CMakeFiles\caris.dir\_deps\imgui-src\imgui_widgets.cpp.s
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj: _deps/imgui-src/imgui_tables.cpp
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj -MF CMakeFiles\caris.dir\_deps\imgui-src\imgui_tables.cpp.obj.d -o CMakeFiles\caris.dir\_deps\imgui-src\imgui_tables.cpp.obj -c "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_tables.cpp"
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_tables.cpp" > CMakeFiles\caris.dir\_deps\imgui-src\imgui_tables.cpp.i
+
+CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\build\_deps\imgui-src\imgui_tables.cpp" -o CMakeFiles\caris.dir\_deps\imgui-src\imgui_tables.cpp.s
+
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj: _deps/imgui-src/backends/imgui_impl_glfw.cpp
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj -MF CMakeFiles\caris.dir\_deps\imgui-src\backends\imgui_impl_glfw.cpp.obj.d -o CMakeFiles\caris.dir\_deps\imgui-src\backends\imgui_impl_glfw.cpp.obj -c "C:\Projects\Citrine RIS\build\_deps\imgui-src\backends\imgui_impl_glfw.cpp"
+
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\build\_deps\imgui-src\backends\imgui_impl_glfw.cpp" > CMakeFiles\caris.dir\_deps\imgui-src\backends\imgui_impl_glfw.cpp.i
+
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\build\_deps\imgui-src\backends\imgui_impl_glfw.cpp" -o CMakeFiles\caris.dir\_deps\imgui-src\backends\imgui_impl_glfw.cpp.s
+
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj: _deps/imgui-src/backends/imgui_impl_opengl3.cpp
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj -MF CMakeFiles\caris.dir\_deps\imgui-src\backends\imgui_impl_opengl3.cpp.obj.d -o CMakeFiles\caris.dir\_deps\imgui-src\backends\imgui_impl_opengl3.cpp.obj -c "C:\Projects\Citrine RIS\build\_deps\imgui-src\backends\imgui_impl_opengl3.cpp"
+
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\build\_deps\imgui-src\backends\imgui_impl_opengl3.cpp" > CMakeFiles\caris.dir\_deps\imgui-src\backends\imgui_impl_opengl3.cpp.i
+
+CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\build\_deps\imgui-src\backends\imgui_impl_opengl3.cpp" -o CMakeFiles\caris.dir\_deps\imgui-src\backends\imgui_impl_opengl3.cpp.s
+
+CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj: _deps/implot-src/implot.cpp
+CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj -MF CMakeFiles\caris.dir\_deps\implot-src\implot.cpp.obj.d -o CMakeFiles\caris.dir\_deps\implot-src\implot.cpp.obj -c "C:\Projects\Citrine RIS\build\_deps\implot-src\implot.cpp"
+
+CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\build\_deps\implot-src\implot.cpp" > CMakeFiles\caris.dir\_deps\implot-src\implot.cpp.i
+
+CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\build\_deps\implot-src\implot.cpp" -o CMakeFiles\caris.dir\_deps\implot-src\implot.cpp.s
+
+CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj: CMakeFiles/caris.dir/flags.make
+CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj: CMakeFiles/caris.dir/includes_CXX.rsp
+CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj: _deps/implot-src/implot_items.cpp
+CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj: CMakeFiles/caris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj -MF CMakeFiles\caris.dir\_deps\implot-src\implot_items.cpp.obj.d -o CMakeFiles\caris.dir\_deps\implot-src\implot_items.cpp.obj -c "C:\Projects\Citrine RIS\build\_deps\implot-src\implot_items.cpp"
+
+CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Projects\Citrine RIS\build\_deps\implot-src\implot_items.cpp" > CMakeFiles\caris.dir\_deps\implot-src\implot_items.cpp.i
+
+CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Projects\Citrine RIS\build\_deps\implot-src\implot_items.cpp" -o CMakeFiles\caris.dir\_deps\implot-src\implot_items.cpp.s
+
 # Object files for target caris
 caris_OBJECTS = \
 "CMakeFiles/caris.dir/src/economy.cpp.obj" \
@@ -176,8 +318,17 @@ caris_OBJECTS = \
 "CMakeFiles/caris.dir/src/helper.cpp.obj" \
 "CMakeFiles/caris.dir/src/industry.cpp.obj" \
 "CMakeFiles/caris.dir/src/init.cpp.obj" \
-"CMakeFiles/caris.dir/src/main.cpp.obj" \
-"CMakeFiles/caris.dir/src/sim.cpp.obj"
+"CMakeFiles/caris.dir/src/invest.cpp.obj" \
+"CMakeFiles/caris.dir/src/mainGui.cpp.obj" \
+"CMakeFiles/caris.dir/src/sim.cpp.obj" \
+"CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj" \
+"CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj" \
+"CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj" \
+"CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj" \
+"CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj" \
+"CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj" \
+"CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj" \
+"CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj"
 
 # External object files for target caris
 caris_EXTERNAL_OBJECTS =
@@ -187,13 +338,23 @@ C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/src/gov.cpp.obj
 C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/src/helper.cpp.obj
 C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/src/industry.cpp.obj
 C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/src/init.cpp.obj
-C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/src/main.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/src/invest.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/src/mainGui.cpp.obj
 C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/src/sim.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj
+C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj
 C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/build.make
+C:/Projects/Citrine\ RIS/caris.exe: _deps/glfw-build/src/libglfw3.a
 C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/linkLibs.rsp
 C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/objects1.rsp
 C:/Projects/Citrine\ RIS/caris.exe: CMakeFiles/caris.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable \"C:\Projects\Citrine RIS\caris.exe\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Projects\Citrine RIS\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable \"C:\Projects\Citrine RIS\caris.exe\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\caris.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

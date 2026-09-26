@@ -22,10 +22,15 @@ class Investor {
         double indexShares;
         double bondPrincipal;
         double interestRate;
+        double bondIntRate;
 
         Investor(Economy& economy, Government& government, Industries& industries);
         void InvestorInit();
         void update();
+        void display();
+        void buy(std::string target, double amount);
+        void sell(std::string target, double amount);
+        double totalValue();
 };
 
 class Portfolio {

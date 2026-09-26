@@ -84,6 +84,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Projects\Citrine RIS\build\CMakeFiles" "C:\Projects\Citrine RIS\build\\CMakeFiles\progress.marks"
@@ -127,6 +172,237 @@ caris: cmake_check_build_system
 caris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/build
 .PHONY : caris/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\CMakeFiles\uninstall.dir\build.make _deps/glfw-build/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\glfw.dir\build.make _deps/glfw-build/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named update_mappings
+
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 update_mappings
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
+
+_deps/imgui-src/backends/imgui_impl_glfw.obj: _deps/imgui-src/backends/imgui_impl_glfw.cpp.obj
+.PHONY : _deps/imgui-src/backends/imgui_impl_glfw.obj
+
+# target to build an object file
+_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj
+.PHONY : _deps/imgui-src/backends/imgui_impl_glfw.cpp.obj
+
+_deps/imgui-src/backends/imgui_impl_glfw.i: _deps/imgui-src/backends/imgui_impl_glfw.cpp.i
+.PHONY : _deps/imgui-src/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+_deps/imgui-src/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.i
+.PHONY : _deps/imgui-src/backends/imgui_impl_glfw.cpp.i
+
+_deps/imgui-src/backends/imgui_impl_glfw.s: _deps/imgui-src/backends/imgui_impl_glfw.cpp.s
+.PHONY : _deps/imgui-src/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+_deps/imgui-src/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.s
+.PHONY : _deps/imgui-src/backends/imgui_impl_glfw.cpp.s
+
+_deps/imgui-src/backends/imgui_impl_opengl3.obj: _deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj
+.PHONY : _deps/imgui-src/backends/imgui_impl_opengl3.obj
+
+# target to build an object file
+_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj
+.PHONY : _deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj
+
+_deps/imgui-src/backends/imgui_impl_opengl3.i: _deps/imgui-src/backends/imgui_impl_opengl3.cpp.i
+.PHONY : _deps/imgui-src/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+_deps/imgui-src/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.i
+.PHONY : _deps/imgui-src/backends/imgui_impl_opengl3.cpp.i
+
+_deps/imgui-src/backends/imgui_impl_opengl3.s: _deps/imgui-src/backends/imgui_impl_opengl3.cpp.s
+.PHONY : _deps/imgui-src/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+_deps/imgui-src/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.s
+.PHONY : _deps/imgui-src/backends/imgui_impl_opengl3.cpp.s
+
+_deps/imgui-src/imgui.obj: _deps/imgui-src/imgui.cpp.obj
+.PHONY : _deps/imgui-src/imgui.obj
+
+# target to build an object file
+_deps/imgui-src/imgui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.obj
+.PHONY : _deps/imgui-src/imgui.cpp.obj
+
+_deps/imgui-src/imgui.i: _deps/imgui-src/imgui.cpp.i
+.PHONY : _deps/imgui-src/imgui.i
+
+# target to preprocess a source file
+_deps/imgui-src/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.i
+.PHONY : _deps/imgui-src/imgui.cpp.i
+
+_deps/imgui-src/imgui.s: _deps/imgui-src/imgui.cpp.s
+.PHONY : _deps/imgui-src/imgui.s
+
+# target to generate assembly for a file
+_deps/imgui-src/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui.cpp.s
+.PHONY : _deps/imgui-src/imgui.cpp.s
+
+_deps/imgui-src/imgui_draw.obj: _deps/imgui-src/imgui_draw.cpp.obj
+.PHONY : _deps/imgui-src/imgui_draw.obj
+
+# target to build an object file
+_deps/imgui-src/imgui_draw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.obj
+.PHONY : _deps/imgui-src/imgui_draw.cpp.obj
+
+_deps/imgui-src/imgui_draw.i: _deps/imgui-src/imgui_draw.cpp.i
+.PHONY : _deps/imgui-src/imgui_draw.i
+
+# target to preprocess a source file
+_deps/imgui-src/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.i
+.PHONY : _deps/imgui-src/imgui_draw.cpp.i
+
+_deps/imgui-src/imgui_draw.s: _deps/imgui-src/imgui_draw.cpp.s
+.PHONY : _deps/imgui-src/imgui_draw.s
+
+# target to generate assembly for a file
+_deps/imgui-src/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_draw.cpp.s
+.PHONY : _deps/imgui-src/imgui_draw.cpp.s
+
+_deps/imgui-src/imgui_tables.obj: _deps/imgui-src/imgui_tables.cpp.obj
+.PHONY : _deps/imgui-src/imgui_tables.obj
+
+# target to build an object file
+_deps/imgui-src/imgui_tables.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.obj
+.PHONY : _deps/imgui-src/imgui_tables.cpp.obj
+
+_deps/imgui-src/imgui_tables.i: _deps/imgui-src/imgui_tables.cpp.i
+.PHONY : _deps/imgui-src/imgui_tables.i
+
+# target to preprocess a source file
+_deps/imgui-src/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.i
+.PHONY : _deps/imgui-src/imgui_tables.cpp.i
+
+_deps/imgui-src/imgui_tables.s: _deps/imgui-src/imgui_tables.cpp.s
+.PHONY : _deps/imgui-src/imgui_tables.s
+
+# target to generate assembly for a file
+_deps/imgui-src/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_tables.cpp.s
+.PHONY : _deps/imgui-src/imgui_tables.cpp.s
+
+_deps/imgui-src/imgui_widgets.obj: _deps/imgui-src/imgui_widgets.cpp.obj
+.PHONY : _deps/imgui-src/imgui_widgets.obj
+
+# target to build an object file
+_deps/imgui-src/imgui_widgets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.obj
+.PHONY : _deps/imgui-src/imgui_widgets.cpp.obj
+
+_deps/imgui-src/imgui_widgets.i: _deps/imgui-src/imgui_widgets.cpp.i
+.PHONY : _deps/imgui-src/imgui_widgets.i
+
+# target to preprocess a source file
+_deps/imgui-src/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.i
+.PHONY : _deps/imgui-src/imgui_widgets.cpp.i
+
+_deps/imgui-src/imgui_widgets.s: _deps/imgui-src/imgui_widgets.cpp.s
+.PHONY : _deps/imgui-src/imgui_widgets.s
+
+# target to generate assembly for a file
+_deps/imgui-src/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/imgui-src/imgui_widgets.cpp.s
+.PHONY : _deps/imgui-src/imgui_widgets.cpp.s
+
+_deps/implot-src/implot.obj: _deps/implot-src/implot.cpp.obj
+.PHONY : _deps/implot-src/implot.obj
+
+# target to build an object file
+_deps/implot-src/implot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.obj
+.PHONY : _deps/implot-src/implot.cpp.obj
+
+_deps/implot-src/implot.i: _deps/implot-src/implot.cpp.i
+.PHONY : _deps/implot-src/implot.i
+
+# target to preprocess a source file
+_deps/implot-src/implot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.i
+.PHONY : _deps/implot-src/implot.cpp.i
+
+_deps/implot-src/implot.s: _deps/implot-src/implot.cpp.s
+.PHONY : _deps/implot-src/implot.s
+
+# target to generate assembly for a file
+_deps/implot-src/implot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/implot-src/implot.cpp.s
+.PHONY : _deps/implot-src/implot.cpp.s
+
+_deps/implot-src/implot_items.obj: _deps/implot-src/implot_items.cpp.obj
+.PHONY : _deps/implot-src/implot_items.obj
+
+# target to build an object file
+_deps/implot-src/implot_items.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.obj
+.PHONY : _deps/implot-src/implot_items.cpp.obj
+
+_deps/implot-src/implot_items.i: _deps/implot-src/implot_items.cpp.i
+.PHONY : _deps/implot-src/implot_items.i
+
+# target to preprocess a source file
+_deps/implot-src/implot_items.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.i
+.PHONY : _deps/implot-src/implot_items.cpp.i
+
+_deps/implot-src/implot_items.s: _deps/implot-src/implot_items.cpp.s
+.PHONY : _deps/implot-src/implot_items.s
+
+# target to generate assembly for a file
+_deps/implot-src/implot_items.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/_deps/implot-src/implot_items.cpp.s
+.PHONY : _deps/implot-src/implot_items.cpp.s
 
 src/economy.obj: src/economy.cpp.obj
 .PHONY : src/economy.obj
@@ -248,29 +524,53 @@ src/init.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/init.cpp.s
 .PHONY : src/init.cpp.s
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+src/invest.obj: src/invest.cpp.obj
+.PHONY : src/invest.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/invest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/invest.cpp.obj
+.PHONY : src/invest.cpp.obj
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/invest.i: src/invest.cpp.i
+.PHONY : src/invest.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/invest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/invest.cpp.i
+.PHONY : src/invest.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/invest.s: src/invest.cpp.s
+.PHONY : src/invest.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/invest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/invest.cpp.s
+.PHONY : src/invest.cpp.s
+
+src/mainGui.obj: src/mainGui.cpp.obj
+.PHONY : src/mainGui.obj
+
+# target to build an object file
+src/mainGui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/mainGui.cpp.obj
+.PHONY : src/mainGui.cpp.obj
+
+src/mainGui.i: src/mainGui.cpp.i
+.PHONY : src/mainGui.i
+
+# target to preprocess a source file
+src/mainGui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/mainGui.cpp.i
+.PHONY : src/mainGui.cpp.i
+
+src/mainGui.s: src/mainGui.cpp.s
+.PHONY : src/mainGui.s
+
+# target to generate assembly for a file
+src/mainGui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\caris.dir\build.make CMakeFiles/caris.dir/src/mainGui.cpp.s
+.PHONY : src/mainGui.cpp.s
 
 src/sim.obj: src/sim.cpp.obj
 .PHONY : src/sim.obj
@@ -303,8 +603,39 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... uninstall
+	@echo ... update_mappings
 	@echo ... caris
+	@echo ... glfw
+	@echo ... _deps/imgui-src/backends/imgui_impl_glfw.obj
+	@echo ... _deps/imgui-src/backends/imgui_impl_glfw.i
+	@echo ... _deps/imgui-src/backends/imgui_impl_glfw.s
+	@echo ... _deps/imgui-src/backends/imgui_impl_opengl3.obj
+	@echo ... _deps/imgui-src/backends/imgui_impl_opengl3.i
+	@echo ... _deps/imgui-src/backends/imgui_impl_opengl3.s
+	@echo ... _deps/imgui-src/imgui.obj
+	@echo ... _deps/imgui-src/imgui.i
+	@echo ... _deps/imgui-src/imgui.s
+	@echo ... _deps/imgui-src/imgui_draw.obj
+	@echo ... _deps/imgui-src/imgui_draw.i
+	@echo ... _deps/imgui-src/imgui_draw.s
+	@echo ... _deps/imgui-src/imgui_tables.obj
+	@echo ... _deps/imgui-src/imgui_tables.i
+	@echo ... _deps/imgui-src/imgui_tables.s
+	@echo ... _deps/imgui-src/imgui_widgets.obj
+	@echo ... _deps/imgui-src/imgui_widgets.i
+	@echo ... _deps/imgui-src/imgui_widgets.s
+	@echo ... _deps/implot-src/implot.obj
+	@echo ... _deps/implot-src/implot.i
+	@echo ... _deps/implot-src/implot.s
+	@echo ... _deps/implot-src/implot_items.obj
+	@echo ... _deps/implot-src/implot_items.i
+	@echo ... _deps/implot-src/implot_items.s
 	@echo ... src/economy.obj
 	@echo ... src/economy.i
 	@echo ... src/economy.s
@@ -320,9 +651,12 @@ help:
 	@echo ... src/init.obj
 	@echo ... src/init.i
 	@echo ... src/init.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... src/invest.obj
+	@echo ... src/invest.i
+	@echo ... src/invest.s
+	@echo ... src/mainGui.obj
+	@echo ... src/mainGui.i
+	@echo ... src/mainGui.s
 	@echo ... src/sim.obj
 	@echo ... src/sim.i
 	@echo ... src/sim.s

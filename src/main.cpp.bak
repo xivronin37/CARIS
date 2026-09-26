@@ -7,24 +7,24 @@
 #include "gov.h"
 #include "sim.h"
 #include "industry.h"
+#include "invest.h"
 
 int main() {
     Init init;
     Economy econ;
     Government gov(init, econ);
     Industries ind(econ, gov);
-    Simulation sim(econ, gov, ind);
+    Investor inv(econ, gov, ind);
+    Simulation sim(econ, gov, ind, inv);
 
     int years = 50;
-    std::cout << "Year 0\nEconomy\n";
+    std::cout << "Year 0\n";
     econ.stats();
-    std::cout << "Government\n";
     gov.govStats();
     std::cout << "\nRunning simulation...\n";
     sim.run();
-    std::cout << "Year 50\nEconomy\n";
+    std::cout << "Year 50\n";
     econ.stats();
-    std::cout << "Government\n";
     gov.govStats();
     
 

@@ -25,8 +25,6 @@ void Industry::update() {
     if (!calibrated) {
         valuationMultiple = 100.0 / output;
         calibrated = true;
-        std::cout <<  "Valuation Multiple: " << valuationMultiple << "\n";
-        std::cout << "Out:" << output << "\n";
     }
 
     outHistory.push_back(output);
@@ -45,12 +43,6 @@ double Industry::outputVal(double productivity, double employment) {
 
 
 void Industries::industryInit() {
-    agriculture.update();
-    manufacturing.update();
-    construction.update();
-    energy.update();
-    services.update();
-
     agriculture.outputShare = 0.08;
     manufacturing.outputShare = 0.22;
     construction.outputShare = 0.07;
@@ -77,6 +69,11 @@ void Industries::industryInit() {
     energy.output = econ.demandGDP * energy.outputShare;
     services.output = econ.demandGDP * services.outputShare;
 
+    agriculture.update();
+    manufacturing.update();
+    construction.update();
+    energy.update();
+    services.update();
 }
 
 void Industries::update() {
@@ -88,7 +85,7 @@ void Industries::update() {
         double workerSum = agriculture.desiredEmployment(wage) + manufacturing.desiredEmployment(wage) + construction.desiredEmployment(wage)
         + energy.desiredEmployment(wage) + services.desiredEmployment(wage);
 
-        if (std::abs(workerSum - econ.laborForce) < 0.0001) break;
+        if (std::abs(workerSum - econ.laborForce) < 0.001) break;
         else if (workerSum > econ.laborForce) low = wage;
         else high = wage;
     }
@@ -119,20 +116,10 @@ void Industries::update() {
 
     double totalOut = totalOutput();
     double growthRate = hasPrevTotal ? (totalOut - previousTotal) / previousTotal : 0;
-    indexPrice *= (1 + growthRate * 2.0);
+    indexPrice *= (1 + growthRate * 1.55);
 
     previousTotal = totalOut;
     hasPrevTotal = true;
-
-    if (tickNumber % 120 == 0) {
-        std::cout << "\n";
-        std::cout << "AGR  prod=" << agriculture.productivity << " emp=" << agriculture.employment << " out=" << agriculture.output << " wage=" << agriculture.wage << " price=" << agriculture.price << "\n";
-        std::cout << "MAN  prod=" << manufacturing.productivity << " emp=" << manufacturing.employment << " out=" << manufacturing.output << " wage=" << manufacturing.wage << " price=" << manufacturing.price << "\n";
-        std::cout << "CON  prod=" << construction.productivity << " emp=" << construction.employment << " out=" << construction.output << " wage=" << construction.wage << " price=" << construction.price << "\n";
-        std::cout << "ENE  prod=" << energy.productivity << " emp=" << energy.employment << " out=" << energy.output << " wage=" << energy.wage << " price=" << energy.price << "\n";
-        std::cout << "SER  prod=" << services.productivity << " emp=" << services.employment << " out=" << services.output << " wage=" << services.wage << " price=" << services.price << "\n";
-    }
-    
     tickNumber++;
 }
 
