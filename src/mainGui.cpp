@@ -176,7 +176,6 @@ int main() {
         }
         ImGui::End();
 
-        ImGui::SetNextWindowSize(ImVec2(400, 300));
         ImGui::Begin("Economy");
         ImGui::Text("Population: %s", formatNumber(econ.population).c_str());
         ImGui::Text("Labor Participation: %s %", formatNumber(econ.laborParticipation * 100).c_str());
@@ -187,7 +186,6 @@ int main() {
         ImGui::Text("Inflation: %s %", formatNumber(econ.inflation * 100).c_str());
         ImGui::End();
 
-        ImGui::SetNextWindowSize(ImVec2(400, 300));
         ImGui::Begin("Government");
         ImGui::Text("Tax Rate: %s%", formatNumber(gov.taxRate*100).c_str());
         ImGui::Text("Government Spending: $%s", formatNumber(gov.governmentSpending).c_str());
@@ -195,9 +193,13 @@ int main() {
         ImGui::Text("Debt Ratio: %s", formatNumber(gov.debtRatio).c_str());
         ImGui::End();
 
-        ImGui::SetNextWindowSize(ImVec2(400, 300));
         ImGui::Begin("Investor");
-        ImGui::Text("Cash: %s", formatNumber(inv.cash).c_str());
+        ImGui::Text("Agriculture: $%s", formatNumber(ind.agriculture.price).c_str());
+        ImGui::Text("Manufacturing: $%s", formatNumber(ind.manufacturing.price).c_str());
+        ImGui::Text("Construction: $%s", formatNumber(ind.construction.price).c_str());
+        ImGui::Text("Energy: $%s", formatNumber(ind.energy.price).c_str());
+        ImGui::Text("Services: $%s", formatNumber(ind.services.price).c_str());
+        ImGui::Text("Cash: $%s", formatNumber(inv.cash).c_str());
         
         ImGui::Combo("Target", &selectedTarget, targets, IM_ARRAYSIZE(targets));
         if (ImGui::Button("Buy")) {
@@ -208,6 +210,11 @@ int main() {
             inv.sell(targets[selectedTarget], buyAmount);
         }
         ImGui::InputDouble("Amount (in cash)", &buyAmount);
+        ImGui::Text("Agriculture: %s shares", formatNumber(inv.agricultureShares).c_str());
+        ImGui::Text("Manufacturing: %s shares", formatNumber(inv.manufacturingShares).c_str());
+        ImGui::Text("Construction: %s shares", formatNumber(inv.constructionShares).c_str());
+        ImGui::Text("Energy: %s shares", formatNumber(inv.energyShares).c_str());
+        ImGui::Text("Services: %s shares", formatNumber(inv.servicesShares).c_str());
         ImGui::End();
 
 
